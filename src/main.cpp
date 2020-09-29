@@ -1,4 +1,5 @@
-#include <iostream>
+#include <thread>
+#include <chrono>
 #include <HotConsts/HotConsts.h>
 
 // While debugging the program, try changing this value and saving the file!
@@ -13,7 +14,7 @@ int main(int argc, const char * argv[])
     {
         std::cout << "The current value of testConstant is: " << testConstant << std::endl;
         std::cout << "The current value of testExternConstant is: " << testExternConstant << std::endl;
-        sleep(1);
+        std::this_thread::sleep_for(std::chrono::seconds(1));
     }
     
     return 0;

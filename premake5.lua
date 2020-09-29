@@ -21,7 +21,7 @@ include "vendor/HotConsts/pm_library.lua"
 -- Test project.
 project "HotConsts_Demo"
     kind "ConsoleApp"
-    links { "HotConsts", "CoreServices.framework" }
+    links "HotConsts"
     language "C++"
     cppdialect "C++17"
 
@@ -31,6 +31,7 @@ project "HotConsts_Demo"
         staticruntime "On"
     filter "system:macosx"
         systemversion "10.15"
+        links "CoreServices.framework"
     filter {}
 
     -- Build locations
