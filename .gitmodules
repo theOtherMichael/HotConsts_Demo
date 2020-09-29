@@ -1,0 +1,3 @@
+[submodule "vendor/HotConsts"]
+	path = vendor/HotConsts
+	url = git@github.com:theOtherMichael/HotConsts.git
